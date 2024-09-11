@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-bg-color: rgba(241, 243, 255, 1);
+  --secondary-bg-color: rgba(13, 40, 166, 1);
+  --card-border-color: rgba(208, 208, 208, 1);
+  --button-primary-color:rgba(92, 184, 95, 1);
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+nav.navbar {
+  font-weight: bold;
+  background-color: var(--main-bg-color);
+}
+
+.nav-item {
+  text-decoration: none;
+  margin-right: 32px;
+}
+
+.nav-item .nav-link {
+  font-weight: 400;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  position: relative;
+  background-color: var(--main-bg-color);
+}
+
+.our-section {
+  background-color: white;
+}
+
+.bg-car {
+  position: absolute;
+  background-color: var(--secondary-bg-color);
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  border-radius: 100px 0 0 0;
+}
+
+#img-car {
+  z-index: 1
+}
+
+.content-our-section {
+  margin-left: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.item-list:before {
+  content: "";
+  background-image: url("https://i.ibb.co/DwWFsZQ/icon-list.png");
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:300px;
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.icon-card {
+  width: 32px;
+  height: 32px;
+  margin: 10px 0 0 0;
+}
+
+.text-testimonial {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.text-testimonial .tagline-testimonial {
+  margin-top: 16px;
+}
+
+.card-user-content {
+  margin-left: 20px;
+}
+
+.rate-star {
+  width: 16px;
+  height: 16px;
+}
+
+#card-testimonial {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  border: 0;
+  border-radius: 10px;
+}
+
+.prev-button,
+.next-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: var(--button-primary-color);
+  border: 1px solid var(--button-primary-color);
+  color: white;
+}
+
+#img-profile {
+  width: 170px;
+  height: 170px;
+}
+
+#banner-container {
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+#banner-container h1,
+.content-banner {
+  color: white;
+}
+
+.item-navigation {
+  font-weight: bold;
+}
+
+.logo-copyright {
+  background-color: var(--secondary-bg-color);
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.icon-socmed {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+#faq-section {
+  padding-bottom: 80px;
+  margin-top: 80px;
+}
+
+#icon-facebook,
+#icon-instagram,
+#icon-twitter,
+#icon-email,
+#icon-twitch {
+  color: var(--secondary-bg-color);
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    margin-top: 20px;
+  }
+
+  .bg-car {
+    position: absolute;
+    background-color: var(--secondary-bg-color);
+    height: 40%;
+    width: 60%;
+    bottom: 0;
+    right: 0;
+    border-radius: 100px 0 0 0;
+  }
+
+  #img-woman {
+    width: 100%;
+  }
+
+  .why-us-tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-our-section {
+    margin-left: 0;
+  }
+
+  .card-user {
+    background-color: var(--main-bg-color);
+    width: 300px;
+    height: 700px;
+    border-radius: 10px;
+  }
+
+  .card-user .card-item-user {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner-section {
+    padding: 0 10px 10px 10px;
+  }
+
+  #faq-section {
+    padding: 30px 0 30px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .car-img {
+    width: 100%;
+  }
+
+  .card-item {
+    min-height: 350px;
+  }
+}
